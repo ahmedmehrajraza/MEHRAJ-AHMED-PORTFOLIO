@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terracurve Studio - Shaping Spaces with Earth & Craft. Architecture Portfolio of Mehraj Ahmed.">
+    <title>Mehraj Ahmed | Architecture Student Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="cursor-follower"></div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">TERRACURVE</span>
+            <span class="logo-suffix">STUDIO</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Work</a></li>
+                <li><a href="#about" class="nav-link">Studio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">Mehraj Ahmed</h1>
+                <p class="hero-subtitle fade-in-up delay-200">Architecture Student | 3D Designer | Material-Focused
+                    Design.<br>Seeking Internship (Jan-May 2025).</p>
+                <a href="#portfolio" class="btn btn-primary fade-in-up delay-400">View Academic Works</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Academic & Competitions</h2>
+                    <p class="section-desc">A selection of design problems solved through architecture.</p>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1: Bamboo Library -->
+                    <article class="project-card fade-in-up">
+                        <div class="project-image-wrapper">
+                            <img src="images/living-veil-library.jpg" alt="Living Veil Library" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Competition Project</span>
+                                <h3 class="project-title">Living Veil Library</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Organic form with bamboo
+                                    curved structural system.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Museum Design -->
+                    <article class="project-card fade-in-up delay-200">
+                        <div class="project-image-wrapper">
+                            <img src="images/museum.jpg" alt="Experiential Museum" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Competition Project</span>
+                                <h3 class="project-title">Experiential Museum</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Focus on circulation,
+                                    natural light, and passive cooling courtyards.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Sports Center -->
+                    <article class="project-card fade-in-up">
+                        <div class="project-image-wrapper">
+                            <img src="images/sports-center.jpg" alt="Sports Center" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Academic - Semester 5</span>
+                                <h3 class="project-title">Sports Center</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Multi-function public
+                                    zone, structural grid coordination.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Cafeteria -->
+                    <article class="project-card fade-in-up delay-200">
+                        <div class="project-image-wrapper">
+                            <img src="images/cafeteria.jpg" alt="Public Cafeteria" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Academic - Semester 5</span>
+                                <h3 class="project-title">Public Cafeteria</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Community dining space
+                                    focusing on social interaction and ergonomics.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: School Design -->
+                    <article class="project-card fade-in-up">
+                        <div class="project-image-wrapper">
+                            <img src="images/school-design.jpg" alt="School Design" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Academic - Semester 4</span>
+                                <h3 class="project-title">School Design</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Child-centric open
+                                    learning environment with exposed brick facade.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Architecture College -->
+                    <article class="project-card fade-in-up delay-200">
+                        <div class="project-image-wrapper">
+                            <img src="images/architecture-college.jpg" alt="Architecture College" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Academic - Semester 6</span>
+                                <h3 class="project-title">Architecture College Campus</h3>
+                                <p style="color: #ddd; font-size: 0.9rem; margin-top: 0.5rem;">Full campus planning,
+                                    hierarchy of open spaces, and climate response.</p>
+                                <button class="btn-icon"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="portfolio.pdf" download class="btn btn-primary" style="padding: 1.2rem 3rem;">
+                        <i class="fas fa-file-pdf" style="margin-right: 10px;"></i> Download Full Portfolio (29 Pages)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image fade-in-left">
+                        <img src="images/profile.jpg" alt="Mehraj Ahmed" class="about-image-photo"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-lg);">
+                    </div>
+                    <div class="about-content fade-in-right">
+                        <h2 class="section-title">About Me</h2>
+                        <h3 class="about-tagline">Material-Driven Design & Contextual Architecture</h3>
+                        <p>I am <strong>Mehraj Ahmed</strong>, pursuing B.Arch from <strong>Amity University
+                                Chhattisgarh</strong>. My design philosophy focuses on local materials, exposed brick,
+                            terracotta, and climate responsiveness.</p>
+                        <p>With strong skills in <strong>working drawings, 3D visualization, and planning</strong>, I
+                            strive to create simple, honest forms that evoke emotion. I am currently seeking an
+                            internship opportunity to contribute to concept development and architectural documentation.
+                        </p>
+
+                        <div class="skills-list" style="margin-bottom: 2rem;">
+                            <h4 style="font-family: var(--font-serif); margin-bottom: 1rem; color: var(--accent);">
+                                Technical Skills</h4>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="skill-tag">AutoCAD</span>
+                                <span class="skill-tag">SketchUp</span>
+                                <span class="skill-tag">V-Ray</span>
+                                <span class="skill-tag">Lumion</span>
+                                <span class="skill-tag">D5 Render</span>
+                                <span class="skill-tag">Photoshop</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container contact-container">
+                <div class="contact-info fade-in-up">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Ready to shape your space? Contact us today.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Mehraj Ahmed</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Raipur, Chhattisgarh</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mehrajahmed95786@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9522517786</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in-up delay-200" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message">Project Details</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo-small">TERRACURVE STUDIO</span>
+                <span class="copyright">© 2025 Mehraj Ahmed. All rights reserved.</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mehrajahmed._.786?igsh=aXp2eWwzYXBua28y" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

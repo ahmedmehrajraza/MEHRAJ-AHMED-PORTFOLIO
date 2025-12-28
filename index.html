@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehraj Ahmed | Terracurve Studio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow: hidden;
+            /* Prevent scrolling on splash page */
+            height: 100vh;
+            display: flex;
+        }
+
+        .split-screen {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .split-side {
+            flex: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            overflow: hidden;
+            transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            cursor: pointer;
+        }
+
+        .split-side:hover {
+            flex: 1.5;
+            /* Expand on hover */
+        }
+
+        /* Left Side: Academic / Student */
+        .side-academic {
+            background-color: var(--bg-color);
+            /* Light side */
+            color: var(--text-primary);
+        }
+
+        /* Right Side: Studio / Future */
+        .side-studio {
+            background-color: var(--bg-secondary);
+            /* Darker side */
+            color: var(--text-primary);
+            border-left: 1px solid var(--border-color);
+        }
+
+        /* Dark mode overrides if user has system preference for dark mode initially, 
+           or we can force distinct looks. Let's force distinct looks for contrast. */
+        .side-studio {
+            background-color: #2D241E;
+            /* Dark Terracotta */
+            color: #E6DEC8;
+        }
+
+        .content-box {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+            opacity: 0.8;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .split-side:hover .content-box {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Background Images/Gradients */
+        .academic-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 10% 10%, rgba(193, 124, 89, 0.1), transparent 50%);
+            z-index: 1;
+        }
+
+        .studio-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 90% 90%, rgba(230, 222, 200, 0.1), transparent 50%);
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .split-screen {
+                flex-direction: column;
+            }
+
+            .split-side:hover {
+                flex: 1;
+                /* Disable expand on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="split-screen">
+        <!-- Left Side: Academic Portfolio -->
+        <a href="academic.html" class="split-side side-academic">
+            <div class="academic-bg"></div>
+            <div class="content-box">
+                <p>Architecture Student</p>
+                <h2>Mehraj Ahmed</h2>
+                <span class="btn btn-outline" style="border-radius: 50px; margin-top: 2rem;">View Portfolio</span>
+            </div>
+        </a>
+
+        <!-- Right Side: Terracurve Studio -->
+        <a href="studio.html" class="split-side side-studio">
+            <div class="studio-bg"></div>
+            <div class="content-box">
+                <p>Future Practice</p>
+                <h2>Terracurve Studio</h2>
+                <span class="btn btn-outline"
+                    style="border-color: #E6DEC8; color: #E6DEC8; border-radius: 50px; margin-top: 2rem;">Enter
+                    Studio</span>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>
